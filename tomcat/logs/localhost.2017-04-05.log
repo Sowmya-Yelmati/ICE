@@ -1,0 +1,2021 @@
+Apr 05, 2017 12:01:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:01:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:01:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@70f08bc6')
+Apr 05, 2017 12:04:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:04:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:04:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@726d6f29')
+Apr 05, 2017 12:06:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:06:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:06:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@32283279')
+Apr 05, 2017 12:09:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:09:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:09:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@3e8895e5')
+Apr 05, 2017 12:09:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 05, 2017 12:09:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 05, 2017 12:09:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:09:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:09:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@71cb1de3')
+Apr 05, 2017 12:19:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:19:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:19:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@726d6f29')
+Apr 05, 2017 12:19:40 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/StockQuotes] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 32 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+29: else {
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+forEach cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+items cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+var cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+tr cannot be resolved to a variable
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+$ cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+dataItem cannot be resolved
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a type
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert "super ( ) ;" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Constructor call must be the first statement in a constructor
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+dataItem.otherProperty cannot be resolved to a type
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+The left-hand side of an assignment must be a variable
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 32 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+29: else {
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+forEach cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+items cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+var cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+tr cannot be resolved to a variable
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+$ cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+dataItem cannot be resolved
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a type
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert "super ( ) ;" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Constructor call must be the first statement in a constructor
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+dataItem.otherProperty cannot be resolved to a type
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+The left-hand side of an assignment must be a variable
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:490)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:19:40 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/StockQuotes] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.index_jsp] with root cause
+java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:119)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:376)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:21:31 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:21:31 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:21:31 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@702b363d')
+Apr 05, 2017 12:21:42 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/StockQuotes] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 32 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+29: else {
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+forEach cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+items cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+var cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+tr cannot be resolved to a variable
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+$ cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+dataItem cannot be resolved
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a type
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert "super ( ) ;" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Constructor call must be the first statement in a constructor
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+dataItem.otherProperty cannot be resolved to a type
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+The left-hand side of an assignment must be a variable
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 22 in the jsp file: /index.jsp
+ArrayList cannot be resolved to a type
+19: <%
+20: 
+21: if (request.getAttribute("listobj") != null) {
+22:     ArrayList Stocklist = (ArrayList) request.getAttribute("listobj");
+23:     out.println(Stocklist);
+24:     out.println(Stocklist.size());
+25:     for (int i=0; i < Stocklist.size(); i++) {
+
+
+An error occurred at line: 32 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+29: else {
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error on token(s), misplaced construct(s)
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+forEach cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+items cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 33 in the jsp file: /index.jsp
+var cannot be resolved to a variable
+30:     out.println("no data in array");
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 34 in the jsp file: /index.jsp
+tr cannot be resolved to a variable
+31: }  
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "<", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+$ cannot be resolved to a variable
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+dataItem cannot be resolved
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+td cannot be resolved to a type
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Syntax error, insert "super ( ) ;" to complete Statement
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 35 in the jsp file: /index.jsp
+Constructor call must be the first statement in a constructor
+32: <table>
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+dataItem.otherProperty cannot be resolved to a type
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete BlockStatements
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 36 in the jsp file: /index.jsp
+Syntax error on token "/", delete this token
+33:     <c:forEach items="${listobj}" var="dataItem">
+34:         <tr>
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 38 in the jsp file: /index.jsp
+The left-hand side of an assignment must be a variable
+35:             <td>${dataItem.getCompanyName()}</td>
+36:             <td>${dataItem.otherProperty}</td>
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+An error occurred at line: 40 in the jsp file: /index.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Expression
+37:         </tr>
+38:     </c:forEach>
+39: </table>
+40: %>
+41: 
+42: </body>
+43: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:490)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:38:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:38:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:38:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@726d6f29')
+Apr 05, 2017 12:39:00 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/StockQuotes] threw exception [The absolute uri: http://java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application] with root cause
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/core cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:56)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:445)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:117)
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTLDLocation(TagLibraryInfoImpl.java:325)
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:154)
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:419)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:484)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1421)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:40:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:40:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:40:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@4503c9e3')
+Apr 05, 2017 12:48:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:48:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:48:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@56f2f35e')
+Apr 05, 2017 12:48:23 AM org.apache.catalina.core.ApplicationDispatcher invoke
+SEVERE: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: /index.jsp (line: 27, column: 30) quote symbol expected
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:89)
+	at org.apache.jasper.compiler.Parser.parseAttribute(Parser.java:224)
+	at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:162)
+	at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:153)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1229)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1446)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1658)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:995)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1267)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1446)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at PortfolioServlet.doGet(PortfolioServlet.java:28)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:48:23 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [ProfileServlet] in context with path [/StockQuotes] threw exception [/index.jsp (line: 27, column: 30) quote symbol expected] with root cause
+org.apache.jasper.JasperException: /index.jsp (line: 27, column: 30) quote symbol expected
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:89)
+	at org.apache.jasper.compiler.Parser.parseAttribute(Parser.java:224)
+	at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:162)
+	at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:153)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1229)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1446)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1658)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:995)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1267)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1446)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at PortfolioServlet.doGet(PortfolioServlet.java:28)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:49:00 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/StockQuotes] threw exception [/index.jsp (line: 27, column: 30) quote symbol expected] with root cause
+org.apache.jasper.JasperException: /index.jsp (line: 27, column: 30) quote symbol expected
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:89)
+	at org.apache.jasper.compiler.Parser.parseAttribute(Parser.java:224)
+	at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:162)
+	at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:153)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1229)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1446)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1658)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:995)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1267)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1446)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:54:13 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:54:13 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:54:13 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@557f8edb')
+Apr 05, 2017 12:54:25 AM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/StockQuotes] threw exception [/index.jsp (line: 27, column: 17) "${stockBean.getCompanyName(}" contains invalid expression(s): javax.el.ELException: Failed to parse the expression [${stockBean.getCompanyName(}]] with root cause
+org.apache.jasper.JasperException: /index.jsp (line: 27, column: 17) "${stockBean.getCompanyName(}" contains invalid expression(s): javax.el.ELException: Failed to parse the expression [${stockBean.getCompanyName(}]
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.getJspAttribute(Validator.java:1424)
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.checkXmlAttributes(Validator.java:1231)
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.visit(Validator.java:876)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1553)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2392)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2444)
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.visit(Validator.java:895)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1553)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2392)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2444)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2450)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:474)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2392)
+	at org.apache.jasper.compiler.Validator.validateExDirectives(Validator.java:1845)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:218)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:662)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2536)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2525)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Apr 05, 2017 12:55:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 12:55:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 12:55:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@557f8edb')
+Apr 05, 2017 1:02:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:02:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:02:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@56f2f35e')
+Apr 05, 2017 1:07:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:07:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:07:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7e197365')
+Apr 05, 2017 1:09:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:09:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:09:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7e197365')
+Apr 05, 2017 1:32:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:32:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:32:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7e197365')
+Apr 05, 2017 1:40:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:40:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:40:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@557f8edb')
+Apr 05, 2017 1:46:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:46:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:46:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@671549b3')
+Apr 05, 2017 1:46:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 05, 2017 1:46:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 05, 2017 1:46:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:46:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:46:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@557f8edb')
+Apr 05, 2017 1:55:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 1:55:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 1:55:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@557f8edb')
+Apr 05, 2017 2:19:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 2:19:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 2:19:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@557f8edb')
+Apr 05, 2017 2:28:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 05, 2017 2:28:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 05, 2017 2:28:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7e197365')
+Apr 05, 2017 2:45:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 05, 2017 2:45:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
